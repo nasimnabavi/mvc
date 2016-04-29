@@ -113,14 +113,6 @@ class Controller
     }
 
     /**
-     * @return string Controller name without namespace
-     */
-    public function getShortName(): string
-    {
-        return str_replace('Controller', null, (new \ReflectionClass($this))->getShortName());
-    }
-
-    /**
      * @param string $action Controller action
      *
      * @throws ControllerActionNonexistentException
